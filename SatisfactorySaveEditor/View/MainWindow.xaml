@@ -18,7 +18,7 @@
         WindowStartupLocation="Manual"
         DataContext="{Binding MainViewModel, Source={StaticResource Locator}, Mode=OneTime}"
         Closed="MainWindow_OnClosed"
-        Title="{Binding FileName, StringFormat='Satisfactory Save Editor{0}'}">
+        Title="{Binding FileName, StringFormat='Satisfactory Save Editor{0}'}" d:DesignHeight="282.88" d:DesignWidth="415.277">
     <i:Interaction.Triggers>
         <i:EventTrigger EventName="Closing">
             <command:EventToCommand Command="{Binding ExitCommand}" PassEventArgsToCommand="True" />
